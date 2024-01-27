@@ -27,7 +27,7 @@
 
 // Please implement the `ComputationError.IllegalArgument` error.
 
-pub const ComputationError = error {
+pub const ComputationError = error{
     IllegalArgument,
 };
 
@@ -37,7 +37,7 @@ pub fn steps(number: usize) anyerror!usize {
 
     if (number == 0) return ComputationError.IllegalArgument;
 
-    while (result > 1) : (stepCount += 1){
+    while (result > 1) : (stepCount += 1) {
         if (result % 2 == 0) {
             result = result / 2;
         } else {

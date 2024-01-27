@@ -9,7 +9,6 @@
 // 1900 was not a leap year as it's not divisible by 400.
 // 2000 was a leap year!
 
-
 pub fn isLeapYear(year: u32) bool {
     if (year % 100 == 0) {
         if (year % 400 == 0) {
